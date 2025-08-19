@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container-g {
+  max-width: 1120px;
+}
+
+.bg-hero {
+  background-image: linear-gradient(
+      rgba(11, 19, 36, 0.55),
+      rgba(11, 19, 36, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2000&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.metric-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.1);
+}
+
+.feature-card {
+  transition: transform 0.2s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.pricing-card {
+  border: 1px solid rgba(2, 8, 23, 0.08);
+}
+
+/* Animated underline for navbar links */
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: currentColor; /* follows text color (e.g., hover:text-primary) */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+
