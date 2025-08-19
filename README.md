@@ -115,7 +115,6 @@ The ChiliCare team consists of:
 - **Hazriq** - Business Expert
 - **Hafiy** - Backend Developer
 
-
 ## 🤝 Contributing
 
 1. Fork the repository

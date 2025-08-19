@@ -60,4 +60,45 @@ html {
   transform: scaleX(1);
 }
 
+/* FAQ Styles */
+.faq-answer {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1.5rem;
+}
+
+.faq-answer:not(.hidden) {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.faq-answer.hidden {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-question i {
+  transition: transform 0.3s ease;
+}
+
+/* Debug styles to make sure FAQ answers are visible */
+.faq-answer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
 
