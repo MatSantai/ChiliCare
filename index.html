@@ -1058,10 +1058,87 @@
       const mm = document.getElementById("mobileMenu");
       btn && btn.addEventListener("click", () => mm.classList.toggle("hidden"));
 
+      // Hover preview functionality
+      function showHoverPreview(section, imageNumbers) {
+        if (currentSection === null) {
+          // Only show preview if no gallery is currently open
+          const imageNumber = imageNumbers[0]; // Show first image as preview
+          const imagePath = `images/app-screenshot/${imageNumber}.png`;
+          const galleryImage = document.getElementById("galleryImage");
+
+          // Show preview image in default screen
+          document.getElementById("defaultScreen").classList.add("hidden");
+          document
+            .getElementById("galleryContainer")
+            .classList.remove("hidden");
+
+          galleryImage.src = imagePath;
+
+          // Hide navigation controls for preview
+          const navControls = document.querySelector(
+            "#galleryContainer .absolute"
+          );
+          if (navControls) {
+            navControls.style.display = "none";
+          }
+        }
+      }
+
+      function hideHoverPreview() {
+        if (currentSection === null) {
+          // Only hide preview if no gallery is currently open
+          // Show default screen
+          document.getElementById("galleryContainer").classList.add("hidden");
+          document.getElementById("defaultScreen").classList.remove("hidden");
+
+          // Show navigation controls again
+          const navControls = document.querySelector(
+            "#galleryContainer .absolute"
+          );
+          if (navControls) {
+            navControls.style.display = "flex";
+          }
+        }
+      }
+
       // Gallery functionality
       let currentSection = null;
       let currentImageIndex = 0;
       let currentImages = [];
+
+      // Add hover event listeners to feature sections
+      document.addEventListener("DOMContentLoaded", function () {
+        const featureSections = document.querySelectorAll(".feature-hover");
+
+        featureSections.forEach((section) => {
+          const sectionType = section.getAttribute("data-section");
+          let imageNumbers = [];
+
+          // Define image numbers for each section
+          switch (sectionType) {
+            case "fertilizer":
+              imageNumbers = [1, 2];
+              break;
+            case "soil":
+              imageNumbers = [3, 4];
+              break;
+            case "plot-finder":
+              imageNumbers = [5, 6, 7, 8, 9, 10];
+              break;
+            case "pest-detection":
+              imageNumbers = [11, 12];
+              break;
+            case "microclimate":
+              imageNumbers = [13, 14];
+              break;
+          }
+
+          section.addEventListener("mouseenter", () =>
+            showHoverPreview(sectionType, imageNumbers)
+          );
+          section.addEventListener("mouseleave", hideHoverPreview);
+        });
+      });
 
       function openGallery(section, sectionName, imageNumbers) {
         currentSection = section;
@@ -1074,6 +1151,14 @@
         // Show gallery, hide default screen
         document.getElementById("defaultScreen").classList.add("hidden");
         document.getElementById("galleryContainer").classList.remove("hidden");
+
+        // Ensure navigation controls are visible
+        const navControls = document.querySelector(
+          "#galleryContainer .absolute"
+        );
+        if (navControls) {
+          navControls.style.display = "flex";
+        }
 
         // Update navigation buttons
         updateNavigationButtons();
@@ -1127,6 +1212,11 @@
         document.getElementById("galleryContainer").classList.add("hidden");
         document.getElementById("defaultScreen").classList.remove("hidden");
 
+        // Reset current section to allow hover previews again
+        currentSection = null;
+        currentImageIndex = 0;
+        currentImages = [];
+
         // Remove active section highlighting
         removeActiveSectionHighlight();
       }
@@ -1135,6 +1225,11 @@
         // Hide gallery, show default screen
         document.getElementById("galleryContainer").classList.add("hidden");
         document.getElementById("defaultScreen").classList.remove("hidden");
+
+        // Reset current section to allow hover previews again
+        currentSection = null;
+        currentImageIndex = 0;
+        currentImages = [];
 
         // Remove active section highlighting
         removeActiveSectionHighlight();
@@ -1149,14 +1244,30 @@
           `[data-section="${section}"]`
         );
         if (activeElement) {
-          activeElement.classList.add("ring-2", "ring-primary", "bg-primary/5");
+          activeElement.classList.add(
+            "ring-2",
+            "ring-primary",
+            "bg-primary/10",
+            "shadow-lg"
+          );
+          // Force immediate visual feedback
+          activeElement.style.backgroundColor = "rgba(34, 197, 94, 0.1)";
+          activeElement.style.borderColor = "rgb(34, 197, 94)";
         }
       }
 
       function removeActiveSectionHighlight() {
         const allSections = document.querySelectorAll("[data-section]");
         allSections.forEach((section) => {
-          section.classList.remove("ring-2", "ring-primary", "bg-primary/5");
+          section.classList.remove(
+            "ring-2",
+            "ring-primary",
+            "bg-primary/10",
+            "shadow-lg"
+          );
+          // Remove inline styles
+          section.style.backgroundColor = "";
+          section.style.borderColor = "";
         });
       }
 
