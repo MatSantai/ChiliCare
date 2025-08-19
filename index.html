@@ -70,6 +70,7 @@
             <a href="#testimonials" class="nav-link hover:text-primary"
               >Testimonials</a
             >
+            <a href="#faq" class="nav-link hover:text-primary">FAQ</a>
             <a href="#team" class="nav-link hover:text-primary">Team</a>
           </nav>
           <div class="hidden md:flex items-center gap-3">
@@ -119,6 +120,7 @@
             <a href="#testimonials" class="py-2 nav-link hover:text-primary"
               >Testimonials</a
             >
+            <a href="#faq" class="py-2 nav-link hover:text-primary">FAQ</a>
             <a href="#team" class="py-2 nav-link hover:text-primary">Team</a>
           </nav>
         </div>
@@ -281,7 +283,7 @@
           <div>
             <div class="space-y-6 pl-0 md:pl-6">
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 -m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
                 data-section="fertilizer"
                 onclick="openGallery('fertilizer', 'Smart Fertilizer Helper', [1, 2])"
               >
@@ -296,7 +298,7 @@
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 -m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
                 data-section="soil"
                 onclick="openGallery('soil', 'Soil Monitoring & Auto-Watering', [3, 4])"
               >
@@ -311,7 +313,7 @@
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 -m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
                 data-section="plot-finder"
                 onclick="openGallery('plot-finder', 'Smart Crop Plot Finder', [5, 6, 7, 8, 9, 10])"
               >
@@ -326,7 +328,7 @@
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 -m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
                 data-section="pest-detection"
                 onclick="openGallery('pest-detection', 'Auto Pest Detection with ESP32-CAM', [11, 12])"
               >
@@ -343,7 +345,7 @@
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 -m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
                 data-section="microclimate"
                 onclick="openGallery('microclimate', 'Real-time Microclimate Information', [13, 14])"
               >
@@ -801,6 +803,247 @@
         <div class="mt-6 text-center text-xs text-slate-600">
           SUS Score: <span class="font-semibold text-primary">81.3</span> (Grade
           A Usability)
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-20 bg-white">
+      <div class="mx-auto container-g px-4">
+        <h2 class="text-center text-xl md:text-2xl font-extrabold">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center text-slate-600 mt-2 max-w-2xl mx-auto">
+          Get answers to common questions about ChiliCare's smart farming
+          solutions.
+        </p>
+
+        <div class="mt-12 max-w-4xl mx-auto">
+          <div class="space-y-4" id="faqContainer">
+            <!-- FAQ Item 1 -->
+            <div
+              class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+            >
+              <button
+                class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                onclick="toggleFAQ(this)"
+              >
+                <span class="font-semibold text-slate-800">
+                  How does ChiliCare help beginner farmers?
+                </span>
+                <i
+                  class="fas fa-chevron-down text-primary transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="faq-answer hidden px-6 pb-4">
+                <p class="text-slate-600 leading-relaxed">
+                  ChiliCare is designed specifically for farmers of all
+                  experience levels. Our AI-powered Smart Fertilizer Helper
+                  guides beginners through every growth stage with personalized
+                  recommendations. The platform uses simple language and visual
+                  guides to make complex farming decisions easy to understand
+                  and implement.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+              class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+            >
+              <button
+                class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                onclick="toggleFAQ(this)"
+              >
+                <span class="font-semibold text-slate-800">
+                  What hardware do I need to get started?
+                </span>
+                <i
+                  class="fas fa-chevron-down text-primary transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="faq-answer hidden px-6 pb-4">
+                <p class="text-slate-600 leading-relaxed">
+                  You can start with just the mobile app for basic features. For
+                  full functionality, we offer affordable hardware packages:
+                  Soil Moisture Sensor (RM 49.90), Edge/IoT Camera (RM 79.90),
+                  and Control Hub (RM 119.00). All devices are plug-and-play
+                  with no technical setup required.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+              class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+            >
+              <button
+                class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                onclick="toggleFAQ(this)"
+              >
+                <span class="font-semibold text-slate-800">
+                  How accurate is the pest detection system?
+                </span>
+                <i
+                  class="fas fa-chevron-down text-primary transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="faq-answer hidden px-6 pb-4">
+                <p class="text-slate-600 leading-relaxed">
+                  Our ESP32-CAM pest detection system achieves 95% accuracy in
+                  identifying common chili pests. The AI model is trained on
+                  thousands of Malaysian chili farm images and continuously
+                  improves. You'll receive instant alerts when pests are
+                  detected, allowing for early intervention to prevent crop
+                  damage.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div
+              class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+            >
+              <button
+                class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                onclick="toggleFAQ(this)"
+              >
+                <span class="font-semibold text-slate-800">
+                  Can I use ChiliCare on multiple farms?
+                </span>
+                <i
+                  class="fas fa-chevron-down text-primary transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="faq-answer hidden px-6 pb-4">
+                <p class="text-slate-600 leading-relaxed">
+                  Yes! The Premium Plan allows you to manage multiple farms from
+                  a single dashboard. Each farm can have its own sensors and
+                  monitoring setup. You can easily switch between farms and
+                  compare performance data across different locations.
+                </p>
+              </div>
+            </div>
+
+            <!-- Hidden FAQ Items (5-8) -->
+            <div class="hidden faq-hidden space-y-4" id="hiddenFaqs">
+              <!-- FAQ Item 5 -->
+              <div
+                class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+              >
+                <button
+                  class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                  onclick="toggleFAQ(this)"
+                >
+                  <span class="font-semibold text-slate-800">
+                    What kind of support do you provide?
+                  </span>
+                  <i
+                    class="fas fa-chevron-down text-primary transition-transform duration-200"
+                  ></i>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                  <p class="text-slate-600 leading-relaxed">
+                    Premium users get 24/7 expert support via phone, WhatsApp,
+                    and email. We also offer free installation assistance,
+                    training sessions, and regular check-ins to ensure you're
+                    getting the most from ChiliCare. Our support team includes
+                    experienced agronomists who understand local farming
+                    conditions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div
+                class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+              >
+                <button
+                  class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                  onclick="toggleFAQ(this)"
+                >
+                  <span class="font-semibold text-slate-800">
+                    How much can I expect to save with ChiliCare?
+                  </span>
+                  <i
+                    class="fas fa-chevron-down text-primary transition-transform duration-200"
+                  ></i>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                  <p class="text-slate-600 leading-relaxed">
+                    Our users typically see 30% increase in yield, 60% reduction
+                    in pest damage, and 40% water savings. This translates to an
+                    average ROI of 3-5x within the first year. The exact savings
+                    depend on your current farming practices and farm size.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div
+                class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+              >
+                <button
+                  class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                  onclick="toggleFAQ(this)"
+                >
+                  <span class="font-semibold text-slate-800">
+                    Is there a free trial available?
+                  </span>
+                  <i
+                    class="fas fa-chevron-down text-primary transition-transform duration-200"
+                  ></i>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                  <p class="text-slate-600 leading-relaxed">
+                    Yes! We offer a 14-day free trial of the Premium Plan with
+                    full access to all features. No credit card required. You
+                    can also start with our Free Plan which includes basic plot
+                    recommendations and community forum access.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 8 -->
+              <div
+                class="faq-item bg-white border border-slate-200 rounded-xl shadow-sm"
+              >
+                <button
+                  class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-slate-50 transition-colors duration-200"
+                  onclick="toggleFAQ(this)"
+                >
+                  <span class="font-semibold text-slate-800">
+                    How does the auto-watering system work?
+                  </span>
+                  <i
+                    class="fas fa-chevron-down text-primary transition-transform duration-200"
+                  ></i>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                  <p class="text-slate-600 leading-relaxed">
+                    The system uses soil moisture sensors to monitor water
+                    levels in real-time. When moisture drops below optimal
+                    levels, it automatically activates your existing water pump.
+                    You can set custom thresholds and schedules through the
+                    mobile app, and the system learns your farm's specific water
+                    needs over time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Show More/Less Button -->
+          <div class="mt-8 text-center">
+            <button
+              id="showMoreFaqBtn"
+              onclick="toggleShowMoreFaq()"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary-600 transition-colors duration-200 font-medium"
+            >
+              <i class="fas fa-plus text-sm"></i>
+              <span>Show More Questions</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -1325,6 +1568,78 @@
           }
         }
       }
+
+      // FAQ Toggle Functionality
+      function toggleFAQ(button) {
+        const faqItem = button.closest(".faq-item");
+        const answer = faqItem.querySelector(".faq-answer");
+        const icon = button.querySelector("i");
+
+        // Toggle the answer visibility
+        if (answer.classList.contains("hidden")) {
+          // Show answer
+          answer.classList.remove("hidden");
+          icon.style.transform = "rotate(180deg)";
+          button.classList.add("bg-slate-50");
+        } else {
+          // Hide answer
+          answer.classList.add("hidden");
+          icon.style.transform = "rotate(0deg)";
+          button.classList.remove("bg-slate-50");
+        }
+      }
+
+      // Show More/Less FAQ Functionality
+      function toggleShowMoreFaq() {
+        const hiddenFaqs = document.getElementById("hiddenFaqs");
+        const showMoreBtn = document.getElementById("showMoreFaqBtn");
+        const btnIcon = showMoreBtn.querySelector("i");
+        const btnText = showMoreBtn.querySelector("span");
+
+        if (hiddenFaqs.classList.contains("hidden")) {
+          // Show more FAQs
+          hiddenFaqs.classList.remove("hidden");
+          btnIcon.className = "fas fa-minus text-sm";
+          btnText.textContent = "Show Less Questions";
+
+          // Smooth scroll to the newly revealed content
+          setTimeout(() => {
+            hiddenFaqs.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+            });
+          }, 100);
+        } else {
+          // Hide FAQs
+          hiddenFaqs.classList.add("hidden");
+          btnIcon.className = "fas fa-plus text-sm";
+          btnText.textContent = "Show More Questions";
+        }
+      }
+
+      // Optional: Auto-close other FAQ items when one is opened
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqButtons = document.querySelectorAll(".faq-question");
+
+        faqButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const currentItem = this.closest(".faq-item");
+
+            // Close all other FAQ items
+            document.querySelectorAll(".faq-item").forEach((item) => {
+              if (item !== currentItem) {
+                const otherAnswer = item.querySelector(".faq-answer");
+                const otherIcon = item.querySelector(".faq-question i");
+                const otherButton = item.querySelector(".faq-question");
+
+                otherAnswer.classList.add("hidden");
+                otherIcon.style.transform = "rotate(0deg)";
+                otherButton.classList.remove("bg-slate-50");
+              }
+            });
+          });
+        });
+      });
     </script>
   </body>
 </html>
