@@ -2,20 +2,6 @@
 
 A modern, responsive website showcasing ChiliCare's AI-powered smart farming solutions for chili farmers in Malaysia. Built with HTML5, Tailwind CSS, and vanilla JavaScript.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Key Features](#key-features)
-- [Screenshots](#screenshots)
-- [Team](#team)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🎯 Overview
 
 ChiliCare is an innovative smart farming platform that transforms traditional chili farming with cutting-edge AI and IoT technology. Our platform helps Malaysian farmers make data-driven decisions to boost yields, reduce costs, and ensure consistent crop quality.
@@ -37,16 +23,6 @@ ChiliCare is an innovative smart farming platform that transforms traditional ch
 - **Touch/Swipe Support**: Mobile-friendly gallery navigation
 - **Keyboard Navigation**: Arrow keys and Escape key support
 
-### 📱 App Screenshots Gallery
-
-The website includes an interactive gallery showcasing 14 app screenshots organized by feature:
-
-1. **Smart Fertilizer Helper** (Images 1-2)
-2. **Soil Monitoring & Auto-Watering** (Images 3-4)
-3. **Smart Crop Plot Finder** (Images 5-10)
-4. **Auto Pest Detection with ESP32-CAM** (Images 11-12)
-5. **Real-time Microclimate Information** (Images 13-14)
-
 ### 🎨 Design Features
 
 - Modern, clean UI with Tailwind CSS
@@ -62,28 +38,6 @@ The website includes an interactive gallery showcasing 14 app screenshots organi
 - **Icons**: [Font Awesome](https://fontawesome.com/) (via CDN)
 - **Fonts**: Google Fonts (Inter)
 - **Images**: Optimized PNG, JPG, and WebP formats
-
-## 📁 Project Structure
-
-```
-ChiliCare/
-├── index.html              # Main HTML file
-├── styles/
-│   └── styles.css          # Custom CSS styles
-├── images/
-│   ├── app-screenshot/     # App screenshots (1.png - 14.png)
-│   ├── naim.png           # Team member photo
-│   ├── hazriq.png         # Team member photo
-│   ├── hafiy.png          # Team member photo
-│   ├── haizad.png         # Team member photo
-│   ├── smart-crop-plot-finder.png
-│   ├── ai-pest-detection.png
-│   ├── microclimate-monitoring.webp
-│   ├── auto-watering-system.png
-│   ├── malaysia-map.jpg
-│   └── chili-plot-finder.png
-└── README.md              # This file
-```
 
 ## 🚀 Installation
 
@@ -152,26 +106,15 @@ ChiliCare/
 - Clear revenue projections and market opportunities
 - Demographic analysis of target farmers
 
-## 📸 Screenshots
-
-The website includes:
-
-- **Hero Section**: Compelling introduction with call-to-action
-- **Features Section**: Interactive phone mockup with app screenshots
-- **Solutions Section**: Four key smart farming solutions
-- **Market Section**: Market opportunity and dynamics
-- **Team Section**: Team member profiles
-- **Pricing Section**: Transparent pricing plans
-- **Testimonials**: User feedback and success stories
-
 ## 👥 Team
 
 The ChiliCare team consists of:
 
-- **Naim** - Team member
-- **Hazriq** - Team member
-- **Hafiy** - Team member
-- **Haizad** - Team member
+- **Haizad** - Team Leader
+- **Naim** - UI/UX Designer
+- **Hazriq** - Business Expert
+- **Hafiy** - Backend Developer
+
 
 ## 🤝 Contributing
 
