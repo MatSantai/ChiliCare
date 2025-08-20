@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChiliCare - Chili Smart Farming</title>
-    <link rel="icon" type="image/png" href="images/chilicare-logo.png" />
-    <link rel="apple-touch-icon" href="images/chilicare-logo.png" />
+    <link rel="icon" type="image/svg+xml" href="images/chilicare-logo.svg" />
+    <link rel="apple-touch-icon" href="images/chilicare-logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +60,7 @@
         <div class="flex items-center justify-between h-16">
           <a href="#top" class="flex items-center gap-2">
             <img
-              src="images/chilicare-logo.png"
+              src="images/chilicare-logo.svg"
               alt="ChiliCare Logo"
               class="h-8 w-8 rounded-sm object-cover"
             />
@@ -174,9 +174,9 @@
     <!-- Features Showcase -->
     <section id="features" class="py-20 md:py-24 bg-[#F7F7F7]">
       <div class="mx-auto container-g px-4">
-        <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
           <!-- Left Column -->
-          <div class="flex flex-col justify-center h-full mb-8 md:mb-0">
+          <div class="flex flex-col justify-center mb-8 md:mb-0">
             <div class="mb-8">
               <h2
                 class="font-display text-3xl md:text-4xl font-extrabold leading-tight"
@@ -209,8 +209,8 @@
           </div>
 
           <!-- Center Column: Phone Mockup (image-based screen) -->
-          <div class="order-first md:order-none">
-            <div id="phone" class="mx-auto w-[300px]">
+          <div class="order-first md:order-none flex justify-center">
+            <div id="phone" class="w-[300px]">
               <div class="relative rounded-[2.5rem] bg-black p-3 shadow-2xl">
                 <div
                   class="relative h-[600px] w-full bg-white rounded-[2rem] overflow-hidden"
@@ -224,24 +224,13 @@
                     <!-- Default Screen -->
                     <div
                       id="defaultScreen"
-                      class="h-full w-full flex items-center justify-center bg-gradient-to-br from-green-50 to-green-100"
+                      class="h-full w-full relative overflow-hidden"
                     >
-                      <div class="text-center p-6">
-                        <div
-                          class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
-                        >
-                          <i class="fas fa-seedling text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">
-                          ChiliCare
-                        </h3>
-                        <p class="text-sm text-gray-600">
-                          Smart Farming Solutions
-                        </p>
-                        <p class="text-xs text-gray-500 mt-2">
-                          Click on any feature to explore
-                        </p>
-                      </div>
+                      <img
+                        src="images/chilicare-splash.svg"
+                        alt="ChiliCare App Splash Screen"
+                        class="h-full w-full object-cover"
+                      />
                     </div>
 
                     <!-- Gallery Container -->
@@ -287,7 +276,7 @@
           </div>
 
           <!-- Right Column -->
-          <div>
+          <div class="flex flex-col justify-center">
             <div class="space-y-6 pl-0 md:pl-6">
               <div
                 class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
@@ -1215,7 +1204,7 @@
         <div>
           <div class="flex items-center gap-2">
             <img
-              src="images/chilicare-logo.png"
+              src="images/chilicare-logo.svg"
               alt="ChiliCare Logo"
               class="h-6 w-6 rounded-sm object-cover"
             />
