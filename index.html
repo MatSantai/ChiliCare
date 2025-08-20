@@ -277,9 +277,20 @@
 
           <!-- Right Column -->
           <div class="flex flex-col justify-center">
-            <div class="space-y-6 pl-0 md:pl-6">
+            <!-- Instructional Text -->
+            <div class="mb-6 pl-0 md:pl-6">
+              <p class="text-sm text-slate-600 mb-2">
+                <i class="fas fa-mouse-pointer text-primary mr-1"></i>
+                Click on any feature to explore the app
+              </p>
+              <p class="text-xs text-slate-500">
+                Interactive demo - see how ChiliCare works
+              </p>
+            </div>
+
+            <div class="space-y-3 pl-0 md:pl-6">
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4"
                 data-section="fertilizer"
                 onclick="openGallery('fertilizer', 'Smart Fertilizer Helper', [1, 2])"
               >
@@ -288,13 +299,12 @@
                   <h4 class="font-semibold">Smart Fertilizer Helper</h4>
                 </div>
                 <p class="text-sm text-slate-600 mt-2">
-                  AI guides beginner farmers to get the best fertilizer solution
-                  for every chili growth stage.
+                  AI-powered fertilizer recommendations for every growth stage.
                 </p>
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4"
                 data-section="soil"
                 onclick="openGallery('soil', 'Soil Monitoring & Auto-Watering', [3, 4])"
               >
@@ -303,13 +313,12 @@
                   <h4 class="font-semibold">Soil Monitoring & Auto-Watering</h4>
                 </div>
                 <p class="text-sm text-slate-600 mt-2">
-                  IoT sensor tracks real-time soil moisture and automatically
-                  activates the water pump.
+                  Real-time soil monitoring with automatic watering system.
                 </p>
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4"
                 data-section="plot-finder"
                 onclick="openGallery('plot-finder', 'Smart Crop Plot Finder', [5, 6, 7, 8, 9, 10])"
               >
@@ -318,13 +327,12 @@
                   <h4 class="font-semibold">Smart Crop Plot Finder</h4>
                 </div>
                 <p class="text-sm text-slate-600 mt-2">
-                  Helps farmers to find the best spot to plant specific crops
-                  without visiting the real site physically.
+                  Find optimal planting locations without physical site visits.
                 </p>
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4"
                 data-section="pest-detection"
                 onclick="openGallery('pest-detection', 'Auto Pest Detection with ESP32-CAM', [11, 12])"
               >
@@ -335,13 +343,12 @@
                   </h4>
                 </div>
                 <p class="text-sm text-slate-600 mt-2">
-                  Camera captures plant images periodically and sends instant
-                  alerts to reduce crop damage risk.
+                  Automatic pest detection with instant alerts.
                 </p>
               </div>
 
               <div
-                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4 md:-m-4"
+                class="feature-hover cursor-pointer transition-all duration-200 hover:bg-white/50 hover:shadow-lg rounded-xl p-4"
                 data-section="microclimate"
                 onclick="openGallery('microclimate', 'Real-time Microclimate Information', [13, 14])"
               >
@@ -352,9 +359,7 @@
                   </h4>
                 </div>
                 <p class="text-sm text-slate-600 mt-2">
-                  IoT sensor tracks real-time pressure, humidity, and
-                  temperature of the environment and provides predictive
-                  insights for farmers to take early action.
+                  Real-time climate data with predictive insights.
                 </p>
               </div>
             </div>
